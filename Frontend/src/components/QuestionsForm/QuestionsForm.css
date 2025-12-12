@@ -1,0 +1,175 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.response {
+  background-color: #f9f9f9;
+}
+
+.question-card {
+  background-color: #fefefe;
+}
+
+.question-en {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.question-ar {
+  font-size: 1.1rem;
+  color: #444;
+  direction: rtl;
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #4338ca;
+}
+
+.button.small {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+}
+
+.button.next {
+  margin-top: 2rem;
+}
+
+.dropdown {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  appearance: none;
+  background: #f8f8f8;
+  cursor: pointer;
+}
+
+.input-group {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 1.5rem;
+  text-align: left;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.text-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fefefe;
+}
+
+.test-result-label {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: #333;
+}
+
+.button.small.yes {
+  background-color: #28a745; /* green */
+  font-size: 1.1rem;
+  padding: 14px 28px;
+}
+
+.button.small.no {
+  background-color: #dc3545; /* red */
+  font-size: 1.1rem;
+  padding: 14px 28px;
+}
+
+.button.small.selected.yes {
+  background-color: #218838; /* darker green on select */
+}
+
+.button.small.selected.no {
+  background-color: #c82333; /* darker red on select */
+}
+
+.yes-no-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.instruction-image-container {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.instruction-image {
+  max-width: 25%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* NEW ADDITIONS FOR RTL SUPPORT BASED ON LANG ATTRIBUTE */
+.question-card[lang="ar"] {
+  direction: rtl;
+  text-align: right;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: gold;
+}
+.green {
+  background-color: green;
+}
+.white {
+  background-color: white;
+}
